@@ -21,7 +21,7 @@ vector<int> dijkstra(int V, vector<vector<int>> &edges, int src)
 {
     // Code here
     // firstly make adjacency list
-    unordered_map<int, vector<pair<int, int>>> adj; // pair.first is v and pair.second is d/s from u to v
+    unordered_map<int, vector<pair<int, int>>> adj; // pair.first is v and pair.second is d/s from u to v(or weight)
     for (int i = 0; i < edges.size(); i++)
     {
         int u = edges[i][0];

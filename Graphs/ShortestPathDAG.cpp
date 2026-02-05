@@ -3,6 +3,18 @@
 
 // T.C. -> Total: O(V + E)
 // DO a DRY RUN TO GET THE ANSWER AND UNDERSATND THE CODE
+
+// Topological sorting gives us a linear order of nodes such that
+// for every directed edge u → v,
+// u always comes before v.
+
+// This means:
+
+// When you reach node v, you’ve already calculated the shortest distance to u.
+
+// So you can safely relax edge (u, v). 
+ 
+
 #include <iostream>
 #include <stack>
 #include <vector>
@@ -27,7 +39,6 @@ public:
     }
     vector<int> shortestPath(int V, int E, vector<vector<int>> &edges)
     {
-        // code here
         unordered_map<int, list<pair<int, int>>> adj;
         // for visited
         unordered_map<int, bool> visited;
@@ -53,7 +64,7 @@ public:
         {
             int top = st.top();
             st.pop();
-            if (ans[top] == INT_MAX)
+            if (ans[top] == INT_MAX)          // It means that this node is Unreachable (Maybe Disconnected)
             {
                 continue;
             }

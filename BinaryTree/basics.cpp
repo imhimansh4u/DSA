@@ -9,13 +9,20 @@ public:
     node *left;
     node *right;
 
-    node(int d)
+    node(int d) // Constructor
     {
         this->data = d;
         this->left = NULL;
         this->right = NULL;
     }
 };
+
+//  Why a pointer and not just node ?
+
+//     Because in a tree,
+//     each node can have subnodes(left and right) that are dynamically created in memory using new.When we create nodes 
+// dynamically, we use pointers to connect them.
+
 node *buildtree(node *root)
 {
     cout << "Enter the data:: ";
@@ -139,9 +146,9 @@ node *BuildFromlevelOrder(node *root)
     return root;
 }
 // Function to return the height of a tree (is function ko copy pe dry run kr lena sb smjh me aa jaega)
-int height(node* root)
+int height(node *root)
 {
-    // code here    
+    // code here
     if (root == NULL)
     {
         return -1;
@@ -169,7 +176,8 @@ int main()
     PostOrderTraversal(root);
     int h;
     h = height(root);
-    cout<<endl<<"Height of the tree is :: "<<h<<endl; 
+    cout << endl
+         << "Height of the tree is :: " << h << endl;
     return 0;
 }
 // 1 2 4 -1 -1 5 -1 -1 3 6 -1 -1 -1    -->> dataset for normal building tree (example)

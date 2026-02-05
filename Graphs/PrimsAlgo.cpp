@@ -65,7 +65,6 @@ vector<pair<pair<int, int>, int>> MST(int V, vector<vector<int>> &edges)
 
 int main()
 {
-
     return 0;
 }
 

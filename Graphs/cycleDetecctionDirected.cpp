@@ -1,4 +1,4 @@
-//  Cycle Detection in Directed graphs
+//  Cycle Detection in Directed graphs    (Using Depth First Search)
 #include <iostream>
 #include <unordered_map>
 #include <vector>
