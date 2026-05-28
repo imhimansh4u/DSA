@@ -33,6 +33,5 @@ int main()
         cout << sieve[n] << " ";
         n /= sieve[n];
     }
-
     return 0;
 }

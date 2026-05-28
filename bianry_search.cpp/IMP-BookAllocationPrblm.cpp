@@ -1,0 +1,1 @@
+//  Whenever there is some Problem like max of min , or min of max ( or answer is within a perticular range (Think of Binary Search approach in that))
