@@ -55,3 +55,35 @@ int main(){
 }
 
 
+/***
+*                                                     COUNTING SORT
+Counting Sort Algorithm (Step-by-Step)
+
+Algorithm: Counting Sort
+
+Input: An array A of n integers.
+Output: The sorted array.
+
+Find the maximum element in the array.
+Let it be max.
+Create a count array Count of size max + 1.
+Initialize all elements of Count to 0.
+Count the frequency of each element.
+Traverse the input array.
+For each element A[i], increment Count[A[i]] by 1.
+Compute cumulative counts (for stable sorting).
+Starting from index 1 to max,
+
+Update:
+
+Count[i] = Count[i] + Count[i - 1]
+Create an output array Output of size n.
+Place elements into the output array.
+Traverse the input array from right to left.
+For each element A[i]:
+Place it at index Count[A[i]] - 1 in Output.
+Decrement Count[A[i]] by 1.
+Copy the output array back into the original array (if required).
+Display or return the sorted array.
+ * 
+ */
