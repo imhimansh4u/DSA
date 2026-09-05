@@ -1,4 +1,4 @@
-// We have to find the length of the Longest Common Subsequence between Two Strings 
+// We have to find the length of the Longest Common Subsequence between Two Strings (subsequence means Contiguous is not Important)
 #include <iostream>
 #include <vector>
 using namespace std;
